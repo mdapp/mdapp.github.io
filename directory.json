@@ -3,11 +3,13 @@
 		                {
                 "xy" : "0101",
                 "name" : "Fighting Parakeets With Shovels",
-                "url" : "https://fightingparakeetswithshovels.com"
+                "url" : "https://fightingparakeetswithshovels.com",
+		"hits" : 3
                 },{
 		"xy" : "2323",
 		"name" : "Fighting Mongooses With Shovels",
-		"url" : "https://fightingmongooseswithshovels.com"
+		"url" : "https://fightingmongooseswithshovels.com",
+                "hits" : 1920
 		} ]
 
 }
