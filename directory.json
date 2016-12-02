@@ -4,17 +4,20 @@
                 "xy" : "0101",
                 "name" : "Fighting Parakeets With Shovels",
                 "url" : "https://fightingparakeetswithshovels.com",
-		"hits" : 3
+		"hits" : 3,
+		"time" : 1480703864
                 },{
 		"xy" : "2323",
 		"name" : "Fighting Mongooses With Shovels",
 		"url" : "https://fightingmongooseswithshovels.com",
-                "hits" : 1920
+                "hits" : 1920,
+                "time" : 1480703000
 		},{
                 "xy" : "0201",
                 "name" : "Fighting Parakeets With Shovels",
                 "url" : "https://fightingparakeetswithshovels.com",
-                "hits" : 3
+                "hits" : 3,
+                "time" : 1480703833
                 } ]
 
 }
