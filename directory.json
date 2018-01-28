@@ -8,6 +8,7 @@
                 "url" : "http://mattchannon.com",
 		"time" : 1,
 		"counter" : 3,
+		"hits" : 0,
 		"tare" : 0
                 },{
                 "xy" : "2323",
@@ -17,6 +18,7 @@
                 "url" : "http://mattchannon.com",
                 "time" : 1,
                 "counter" : 4,
+		"hits" : 0,
                 "tare" : 0
                 },{
                 "xy" : "1503",
@@ -26,6 +28,7 @@
                 "url" : "http://fatgas.com",
                 "time" : 1,
                 "counter" : 11,
+		"hits" : 0,
                 "tare" : 0
                 } ]
 }
