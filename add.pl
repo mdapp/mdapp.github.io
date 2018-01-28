@@ -57,7 +57,6 @@ my $wantadd = {
     tare => 1,
     time => time,
 };
-#print $json->encode($wantadd)."\n";;
 
 push( $urg, $wantadd );
 push( @data2, $urg );
@@ -75,3 +74,31 @@ print $fh $json->encode($fleshedout);
 close $fh;
 
 print "\n";
+
+my $srcImage = GD::Image->newFromPng($ARGV[0],1);
+
+for (my $i=0; $i < $ARGV[3]; $i++ )
+{
+	for (my $j=0; $j < $ARGV[4]; $j++ )
+	{
+		my $myImage = GD::Image->new(10,10,1);
+		$myImage->copy($srcImage,0,0,10*$i,10*$j,10,10);
+		my $pngData = $myImage->png;
+		my $firstterm = $ARGV[1] + $i;
+		my $secondterm = $ARGV[2] + $j;
+		if ( $firstterm < 10 )
+		{
+			$firstterm = "0" . $firstterm;
+		}
+		if ( $secondterm < 10 )
+		{
+			$secondterm = "0" . $secondterm;
+		}
+		my $outname = "images/" . $firstterm . $secondterm . ".png";
+		open (PICTURE, ">", $outname);
+		binmode PICTURE;
+		print PICTURE $myImage->png;
+#		print $outx $myImage->png;
+		close PICTURE;
+	}
+}
