@@ -102,3 +102,6 @@ for (my $i=0; $i < $ARGV[3]; $i++ )
 		close PICTURE;
 	}
 }
+
+system "git add .";
+system "git commit * -m \"Another new customer!\"";
