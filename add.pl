@@ -45,9 +45,20 @@ my $urg = pop( @data2 );
 my $last = pop( $urg );
 push( $urg, $last );
 
+my $usuallyBlankH = "";
+my $usuallyBlankV = "";
+
+if ( $ARGV[1] < 10 )
+{
+	$usuallyBlankH = "0";
+}
+if ( $ARGV[2] < 10 )
+{
+	$usuallyBlankV = "0";
+}
 
 my $wantadd = {
-    xy => $ARGV[1] . $ARGV[2],
+    xy => $usuallyBlankH . $ARGV[1] . $usuallyBlankV . $ARGV[2],
     width => $ARGV[3],
     height => $ARGV[4],
     url => $ARGV[5],
