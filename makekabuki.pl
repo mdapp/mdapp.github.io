@@ -57,6 +57,6 @@ print "\n";
 	
 
 
-#system "git add .";
-#system "git commit * -m \"Another new customer!\"";
-#system "git push";
+system "git add .";
+system "git commit * -m \"Another new kabuki\"";
+system "git push";
