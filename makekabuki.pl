@@ -26,7 +26,7 @@ print "\n";
 my @fields = $json->encode( $data->{fields} );
 my @datum = @{$json->decode($fields[0])};
 
-my $srcImage = GD::Image->newFromPng('kabuki.png',1);
+my $srcImage = GD::Image->newFromPng('kabukibackup.png',1);
 my $datur;
 my $myImage = $srcImage;
 
