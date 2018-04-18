@@ -115,5 +115,6 @@ for (my $i=0; $i < $ARGV[3]; $i++ )
 }
 
 system "git add .";
-system "git commit * -m \"Another new customer!\"";
+system "git commit * -m \"AUTO: Another new customer!\"";
 system "git push";
+v

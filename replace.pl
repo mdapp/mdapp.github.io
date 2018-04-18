@@ -148,6 +148,6 @@ for (my $i=0; $i < $ARGV[3]; $i++ )
 	}
 }
 
-#system "git add .";
-#system "git commit * -m \"Another new customer!\"";
-#system "git push";
+system "git add .";
+system "git commit * -m \"AUTO: Replaced Graphic\"";
+system "git push";
