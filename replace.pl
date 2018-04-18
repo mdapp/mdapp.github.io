@@ -45,6 +45,7 @@ my $urg = pop( @data2 );
 my $last = pop( $urg );
 push( $urg, $last );
 
+
 my $usuallyBlankH = "";
 my $usuallyBlankV = "";
 
@@ -69,8 +70,41 @@ my $wantadd = {
     time => time,
 };
 
-push( $urg, $wantadd );
-push( @data2, $urg );
+my $dupe;
+
+for my $record (@$urg ) {
+
+my $isMatch = 0;
+	for my $key (keys(%$record )) {
+	my $val = $record->{$key};
+
+#	print "XX:\n";
+#	print $key;
+#	print " .. ";
+#	print $val;
+#	print "\n";
+
+	my $xy = $usuallyBlankH . $ARGV[1] . $usuallyBlankV . $ARGV[2];
+
+	print $xy;
+	if ( $key eq "xy" && $val eq $xy )
+	{	
+		$isMatch = 1;
+#		print "MATCHa\n";
+	}
+}
+	if ( $isMatch == 0 )
+	{
+		push( @$dupe, $record );
+	}
+
+}
+
+
+
+
+push( @$dupe, $wantadd );
+push( @data2, $dupe );
 
 my $fleshedout = {
 	fields => @data2
